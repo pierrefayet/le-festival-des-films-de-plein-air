@@ -1,0 +1,65 @@
+@import "libs/reset.scss";
+
+body {
+    background-color: #ffff;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    .header_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+            margin: 50px;
+            img {
+                width:fit-content;
+
+            }
+            ul {
+                display: flex;
+                gap: 10rem;
+                font-size: large;
+                margin: 50px;
+            }
+            li {
+                width: 100%;
+            };
+    }
+}
+
+main {
+    span {
+        margin-left: 50px;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        margin: 50px
+    }
+    
+    .accueil_top-content-1{
+        display: flex;
+        img {
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        .accueil_top-content-1 {
+                
+                background-color: coral;
+        }
+        .accueil_top-content-1 {
+            
+            background-color: brown;
+        }
+        .content_mid {
+            width: 33%; 
+            background-color: aquamarine;
+        }
+    }
+}
+

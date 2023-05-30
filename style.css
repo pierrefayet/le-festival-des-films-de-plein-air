@@ -1,0 +1,105 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+}
+header .header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 50px;
+}
+header .header_content img {
+  width: fit-content;
+}
+header .header_content ul {
+  display: flex;
+  gap: 10rem;
+  font-size: large;
+  margin: 50px;
+}
+header .header_content li {
+  width: 100%;
+}
+
+main span {
+  margin-left: 50px;
+}
+main .header {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+main .accueil_top-content-1 {
+  display: flex;
+}
+main .accueil_top-content-1 img {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+main .accueil_top-content-1 .accueil_top-content-1 {
+  background-color: coral;
+}
+main .accueil_top-content-1 .accueil_top-content-1 {
+  background-color: brown;
+}
+main .accueil_top-content-1 .content_mid {
+  width: 33%;
+  background-color: aquamarine;
+}
+
+/*# sourceMappingURL=style.css.map */
