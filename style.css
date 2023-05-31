@@ -45,11 +45,19 @@ td, th {
 
 body {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.logo {
+  border-radius: 20px;
 }
 
 header {
@@ -77,29 +85,94 @@ header .header_content li {
 
 main span {
   margin-left: 50px;
+  font-size: meduim;
+}
+main a {
+  font-size: larger;
+}
+main h1 {
+  font-size: x-large;
 }
 main .header {
   display: flex;
   justify-content: center;
   margin: 50px;
 }
-main .accueil_top-content-1 {
-  display: flex;
-}
-main .accueil_top-content-1 img {
+main .accueil_top-content_left {
   display: flex;
   justify-content: center;
-  border-radius: 20px;
 }
-main .accueil_top-content-1 .accueil_top-content-1 {
-  background-color: coral;
+main .accueil_top-content_left-1 {
+  width: 500px;
+  height: 600px;
 }
-main .accueil_top-content-1 .accueil_top-content-1 {
-  background-color: brown;
-}
-main .accueil_top-content-1 .content_mid {
-  width: 33%;
+main .content_mid {
+  width: 500px;
+  height: 600px;
   background-color: aquamarine;
+}
+main .content_mid img {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+main .content_right-1 {
+  width: 500px;
+  height: 600px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.carousel .content-carousel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.carousel .content-carousel .slclasse {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+.carousel .content-carousel .slclasse img {
+  width: 200px;
+  height: 200px;
+}
+.carousel .content-carousel .slclasse:nth-child(3) {
+  opacity: 1;
+}
+.carousel .carousel-text {
+  margin-top: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+footer {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+footer .footer_contact ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

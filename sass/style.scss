@@ -2,10 +2,18 @@
 
 body {
     background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+
 }
 a {
     text-decoration: none;
     color: black;
+}
+.logo {
+    border-radius: 20px;
 }
 header {
     display: flex;
@@ -34,6 +42,13 @@ header {
 main {
     span {
         margin-left: 50px;
+        font-size: meduim;
+    }
+    a {
+        font-size: larger;
+    }
+    h1 {
+        font-size: x-large;
     }
     .header {
         display: flex;
@@ -41,25 +56,91 @@ main {
         margin: 50px
     }
     
-    .accueil_top-content-1{
-        display: flex;
+    .accueil_top-content_left {
+    display: flex;
+    justify-content: center;
+    }
+    .accueil_top-content_left-1 {
+        
+        width: 500px;
+        height: 600px;
+    }
+    .content_mid {
+        width: 500px;
+        height: 600px; 
+        background-color: aquamarine;
         img {
             display: flex;
-            justify-content: center;
-            border-radius: 20px;
-        }
-        .accueil_top-content-1 {
-                
-                background-color: coral;
-        }
-        .accueil_top-content-1 {
-            
-            background-color: brown;
-        }
-        .content_mid {
-            width: 33%; 
-            background-color: aquamarine;
+            align-items: center;
+            border-radius: 10px;
         }
     }
+    .content_right-1 {
+        width: 500px;
+        height: 600px; 
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    
+    
 }
+.carousel {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+
+    .content-carousel {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .slclasse {
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+            &:nth-child(3) {
+                opacity: 1;
+            }
+        }
+    }
+
+    .carousel-text {
+        margin-top: 20px;
+        text-align: center;
+        width: 60%;
+    }
+}
+
+
+footer {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    .footer_contact ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 4px;
+        
+    }
+
+}
+
 
