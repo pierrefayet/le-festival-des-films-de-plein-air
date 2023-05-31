@@ -58,30 +58,27 @@ a {
 
 header {
   display: flex;
+  justify-content: center;
 }
 header .header_content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin: 50px;
+  margin-bottom: 100px;
 }
-header .header_content img {
-  width: fit-content;
+header .header_content .logo {
+  width: 300px;
 }
 header .header_content ul {
   display: flex;
-  gap: 10px;
   font-size: large;
   margin-top: 50px;
-}
-header .header_content ul li {
-  width: 100%;
+  gap: 100px;
 }
 
 main span {
   margin-left: 150px;
-  font-size: meduim;
+  font-size: medium;
 }
 main a {
   font-size: larger;
@@ -92,7 +89,7 @@ main h1 {
 main .header {
   display: flex;
   justify-content: center;
-  margin: 30vh;
+  margin-top: 50px;
 }
 main .accueil_top-content_left {
   display: flex;
@@ -103,7 +100,7 @@ main .accueil_top-content_left {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 33%;
+  width: 20%;
 }
 main .accueil_top-content_left div {
   display: flex;
@@ -118,8 +115,7 @@ main .content_mid img {
   margin-bottom: 20px;
 }
 main .content_right-1 {
-  width: 33%;
-  height: 600px;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -173,7 +169,7 @@ footer .footer_contact ul {
   justify-content: flex-start;
   gap: 10px;
 }
-footer nav ul {
+footernav ul {
   display: flex;
   flex-direction: column;
   padding-top: 40px;

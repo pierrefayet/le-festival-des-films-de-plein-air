@@ -12,33 +12,28 @@ a {
 }
 header {
     display: flex;
+    justify-content: center;
     .header_content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
-            margin: 50px;
-            img {
-                width:fit-content;
-
-            }
+        margin-bottom: 100px;
+        .logo {
+            width:300px;
+        }
             ul {
                 display: flex;
-                gap: 10px;
                 font-size: large;
                 margin-top: 50px;
-                li {
-                    width: 100%;
-                };
+                gap: 100px;
             }
-            
     }
 }
 
 main {
     span {
         margin-left: 150px;
-        font-size: meduim;
+        font-size: medium;
     }
     a {
         font-size: larger;
@@ -49,7 +44,7 @@ main {
     .header {
         display: flex;
         justify-content: center;
-        margin: 30vh;
+        margin-top: 50px;
     }
     
     .accueil_top-content_left {
@@ -62,7 +57,7 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        width: 33%;
+        width: 20%;
         div {
             display: flex;
             flex-direction: column;
@@ -77,8 +72,7 @@ main {
         }
     }
     .content_right-1 {
-        width: 33%;
-        height: 600px; 
+        width: 20%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -90,10 +84,8 @@ main {
             gap: 80px;
         }
     }
-
-    
-    
 }
+
 .carousel {
     display: flex;
     flex-direction: column ;
@@ -138,7 +130,7 @@ footer {
         justify-content: flex-start;
         gap: 10px;
     }
-    nav ul {
+    &nav ul {
         display: flex;
         flex-direction: column;
         padding-top: 40px;
