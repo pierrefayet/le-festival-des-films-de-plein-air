@@ -1,7 +1,7 @@
 @import "libs/reset.scss";
 
 body {
-    background-color: #ffff;
+    background-color: #e5ecff;
 }
 a {
     text-decoration: none;
@@ -24,13 +24,14 @@ header {
             }
             ul {
                 display: flex;
-                gap: 20%;
+                gap: 10px;
                 font-size: large;
-                margin: 50px;
+                margin-top: 50px;
+                li {
+                    width: 100%;
+                };
             }
-            li {
-                width: 100%;
-            };
+            
     }
 }
 
@@ -56,7 +57,7 @@ main {
     justify-content: center;
     
     }
-    .accueil_top-content_left-1 {
+    .accueil_top-content_left{
         display: flex;
         flex-direction: column;
         align-items: center;

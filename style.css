@@ -44,7 +44,7 @@ td, th {
 }
 
 body {
-  background-color: white;
+  background-color: #e5ecff;
 }
 
 a {
@@ -71,11 +71,11 @@ header .header_content img {
 }
 header .header_content ul {
   display: flex;
-  gap: 20%;
+  gap: 10px;
   font-size: large;
-  margin: 50px;
+  margin-top: 50px;
 }
-header .header_content li {
+header .header_content ul li {
   width: 100%;
 }
 
@@ -98,14 +98,14 @@ main .accueil_top-content_left {
   display: flex;
   justify-content: center;
 }
-main .accueil_top-content_left-1 {
+main .accueil_top-content_left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: 33%;
 }
-main .accueil_top-content_left-1 div {
+main .accueil_top-content_left div {
   display: flex;
   flex-direction: column;
   gap: 80px;
