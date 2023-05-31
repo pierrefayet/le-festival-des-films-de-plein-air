@@ -45,10 +45,6 @@ td, th {
 
 body {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-around;
 }
 
 a {
@@ -75,7 +71,7 @@ header .header_content img {
 }
 header .header_content ul {
   display: flex;
-  gap: 10rem;
+  gap: 20%;
   font-size: large;
   margin: 50px;
 }
@@ -84,7 +80,7 @@ header .header_content li {
 }
 
 main span {
-  margin-left: 50px;
+  margin-left: 150px;
   font-size: meduim;
 }
 main a {
@@ -96,41 +92,50 @@ main h1 {
 main .header {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 30vh;
 }
 main .accueil_top-content_left {
   display: flex;
   justify-content: center;
 }
 main .accueil_top-content_left-1 {
-  width: 500px;
-  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 33%;
+}
+main .accueil_top-content_left-1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 main .content_mid {
-  width: 500px;
-  height: 600px;
-  background-color: aquamarine;
+  width: 40%;
 }
 main .content_mid img {
-  display: flex;
-  align-items: center;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 main .content_right-1 {
-  width: 500px;
+  width: 33%;
   height: 600px;
-  background-color: red;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: column;
+  gap: 50px;
+}
+main .content_right-1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .carousel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin-top: 100px;
 }
 .carousel .content-carousel {
