@@ -73,11 +73,14 @@ header .header_content ul {
   display: flex;
   font-size: large;
   margin-top: 50px;
-  gap: 100px;
+  gap: 2%;
+}
+header .header_content a {
+  padding: 5px;
 }
 
 main span {
-  margin-left: 150px;
+  margin-left: 5%;
   font-size: medium;
 }
 main a {
@@ -91,20 +94,17 @@ main .header {
   justify-content: center;
   margin-top: 50px;
 }
-main .accueil_top-content_left {
+main #accueil_top {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 main .accueil_top-content_left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   width: 20%;
 }
 main .accueil_top-content_left div {
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
+  text-align: center;
   gap: 80px;
 }
 main .content_mid {
@@ -114,18 +114,13 @@ main .content_mid img {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-main .content_right-1 {
+main .content_right {
   width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  text-align: center;
   gap: 50px;
 }
-main .content_right-1 div {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+main .content_right div {
+  padding: 10px;
 }
 
 .carousel {
@@ -157,7 +152,7 @@ main .content_right-1 div {
 }
 
 footer {
-  margin: 50px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -169,11 +164,35 @@ footer .footer_contact ul {
   justify-content: flex-start;
   gap: 10px;
 }
-footernav ul {
-  display: flex;
-  flex-direction: column;
-  padding-top: 40px;
-  gap: 4px;
+footer nav ul a {
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .carousel .content-carousel {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .carousel .content-carousel .slclasse {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+  }
+  .carousel .content-carousel .slclasse img {
+    width: 100px;
+    height: 100px;
+  }
+  .carousel .content-carousel .slclasse .carousel-text {
+    margin-top: 20px;
+    text-align: center;
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,14 +25,17 @@ header {
                 display: flex;
                 font-size: large;
                 margin-top: 50px;
-                gap: 100px;
+                gap: 2%;
+            }
+            a {
+                padding: 5px;
             }
     }
 }
 
 main {
     span {
-        margin-left: 150px;
+        margin-left: 5%;
         font-size: medium;
     }
     a {
@@ -47,20 +50,17 @@ main {
         margin-top: 50px;
     }
     
-    .accueil_top-content_left {
+    #accueil_top {
     display: flex;
     justify-content: center;
-    
+
+    margin-top: 50px;
     }
     .accueil_top-content_left{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
         width: 20%;
         div {
-            display: flex;
-            flex-direction: column;
+            padding: 10px;
+            text-align: center;
             gap: 80px;
         }
     }
@@ -71,17 +71,12 @@ main {
             margin-bottom: 20px;
         }
     }
-    .content_right-1 {
+    .content_right {
         width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
+        text-align: center;
         gap: 50px;
         div {
-            display: flex;
-            flex-direction: column;
-            gap: 80px;
+            padding: 10px;
         }
     }
 }
@@ -119,7 +114,7 @@ main {
 
 
 footer {
-    margin: 50px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -130,17 +125,38 @@ footer {
         justify-content: flex-start;
         gap: 10px;
     }
-    &nav ul {
-        display: flex;
-        flex-direction: column;
-        padding-top: 40px;
-        gap: 4px;
-        
+    nav ul a {
+        padding: 5px;
     }
 }
 
 @media screen and (max-width: 768px) {
-
+    .carousel {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        margin-top: 100px;
+    
+        .content-carousel {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+    
+            .slclasse {
+                opacity: 0.5;
+                transition: opacity 0.5s ease;
+                img {
+                    width: 100px;
+                    height: 100px;
+            }
+        
+            .carousel-text {
+                margin-top: 20px;
+                text-align: center;
+                width: 60%;
+            }
+            }
 }
+    }}
 
 
