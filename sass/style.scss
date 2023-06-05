@@ -58,6 +58,7 @@ main {
     h1 {
         font-size: xx-large;
         font-weight: bolder;
+        margin-bottom: 80px;
     }
 
     .header {
@@ -289,3 +290,61 @@ footer {
 
 // Programmation //
 
+.Programmation_content-text {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    .Programmation_content-text-title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+.Programmation_portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.Programmation_portfolio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    > div {
+        flex-grow: 1;
+    }
+
+    img {
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
+        margin-bottom: 10px;
+        transition: width 0.3s;
+        
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: medium;
+    }
+}
