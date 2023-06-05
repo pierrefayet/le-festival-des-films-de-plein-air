@@ -47,6 +47,10 @@ body {
   background-color: #e5ecff;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -75,19 +79,20 @@ header .header_content ul {
   margin-top: 50px;
   gap: 2%;
 }
-header .header_content a {
+header .header_content ul a {
   padding: 5px;
 }
 
 main span {
   margin-left: 5%;
-  font-size: medium;
+  font-size: small;
 }
 main a {
   font-size: larger;
 }
 main h1 {
-  font-size: x-large;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 main .header {
   display: flex;
@@ -161,14 +166,21 @@ footer {
 footer .footer_contact ul {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: 10px;
 }
 footer nav ul a {
   padding: 5px;
 }
+footer form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+footer .form-group {
+  display: flex;
+  flex-direction: column;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .carousel {
     display: flex;
     flex-direction: column;
@@ -185,13 +197,93 @@ footer nav ul a {
     transition: opacity 0.5s ease;
   }
   .carousel .content-carousel .slclasse img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
-  .carousel .content-carousel .slclasse .carousel-text {
+  .carousel .content-carousel .carousel-text {
     margin-top: 20px;
     text-align: center;
     width: 60%;
+  }
+}
+footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+footer .footer_contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer nav .toggle-button {
+  display: inline-block;
+  cursor: pointer;
+}
+footer nav .toggle-button span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #000;
+}
+footer nav ul.menu {
+  display: none;
+}
+footer nav ul.menu.active {
+  display: block;
+}
+
+.festival_content, .festival_identity {
+  text-align: center;
+  margin-top: 100px;
+}
+.festival_content h2, .festival_identity h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+.festival_content h3, .festival_identity h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+.festival_content .card__content_image, .festival_content .card__content_identity-logo, .festival_identity .card__content_image, .festival_identity .card__content_identity-logo {
+  width: 50%;
+  margin: auto;
+}
+.festival_content .card__content_image img, .festival_content .card__content_identity-logo img, .festival_identity .card__content_image img, .festival_identity .card__content_identity-logo img {
+  margin: 40px 0 20px 0;
+  border-radius: 50px;
+}
+.festival_content .text, .festival_identity .text {
+  margin: auto;
+  width: 40%;
+}
+
+.card__content_actualities-content {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+.card__content_actualities-content .card__content_actualities-text {
+  text-align: center;
+  padding: 20px;
+}
+.card__content_actualities-content .card__content_actualities-text .card__content_Actualities-title {
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .card__content_actualities-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .card__content_actualities-content .card__content_actualities-image {
+    text-align: center;
   }
 }
 

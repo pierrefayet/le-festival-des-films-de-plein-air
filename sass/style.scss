@@ -3,78 +3,99 @@
 body {
     background-color: #e5ecff;
 }
+
+li {
+    list-style: none;
+}
 a {
     text-decoration: none;
     color: black;
 }
+
 .logo {
     border-radius: 20px;
 }
+
 header {
     display: flex;
     justify-content: center;
+
     .header_content {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 100px;
+
         .logo {
-            width:300px;
+            width: 300px;
         }
-            ul {
-                display: flex;
-                font-size: large;
-                margin-top: 50px;
-                gap: 2%;
-            }
+
+        ul {
+            display: flex;
+            font-size: large;
+            margin-top: 50px;
+            gap: 2%;
+
             a {
                 padding: 5px;
             }
+        }
     }
 }
+
+//Accueil//
 
 main {
     span {
         margin-left: 5%;
-        font-size: medium;
+        font-size: small;
     }
+
     a {
         font-size: larger;
     }
+
     h1 {
-        font-size: x-large;
+        font-size: xx-large;
+        font-weight: bolder;
     }
+
     .header {
         display: flex;
         justify-content: center;
         margin-top: 50px;
     }
-    
-    #accueil_top {
-    display: flex;
-    justify-content: center;
 
-    margin-top: 50px;
+    #accueil_top {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
     }
-    .accueil_top-content_left{
+
+    .accueil_top-content_left {
         width: 20%;
+
         div {
             padding: 10px;
             text-align: center;
             gap: 80px;
         }
     }
+
     .content_mid {
         width: 40%;
+
         img {
             border-radius: 10px;
             margin-bottom: 20px;
         }
     }
+
     .content_right {
         width: 20%;
         text-align: center;
         gap: 50px;
+
         div {
             padding: 10px;
         }
@@ -83,7 +104,7 @@ main {
 
 .carousel {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     margin-top: 100px;
 
@@ -95,10 +116,12 @@ main {
         .slclasse {
             opacity: 0.5;
             transition: opacity 0.5s ease;
+
             img {
                 width: 200px;
                 height: 200px;
             }
+
             &:nth-child(3) {
                 opacity: 1;
             }
@@ -112,6 +135,65 @@ main {
     }
 }
 
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+
+    .footer_contact ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul a {
+        padding: 5px;
+    }
+
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr
+        
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        .content-carousel {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+
+            .slclasse {
+                opacity: 0.5;
+                transition: opacity 0.5s ease;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .carousel-text {
+                margin-top: 20px;
+                text-align: center;
+                width: 60%;
+            }
+        }
+    }
+}
 
 footer {
     margin-top: 50px;
@@ -122,41 +204,88 @@ footer {
     .footer_contact ul {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        
         gap: 10px;
     }
-    nav ul a {
-        padding: 5px;
+    nav {
+        .toggle-button {
+        display: inline-block;
+            cursor: pointer;
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin-bottom: 5px;
+            background-color: #000;
+        }
+        }
+
+        ul.menu {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+        }
     }
 }
 
-@media screen and (max-width: 768px) {
-    .carousel {
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-        margin-top: 100px;
-    
-        .content-carousel {
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-    
-            .slclasse {
-                opacity: 0.5;
-                transition: opacity 0.5s ease;
-                img {
-                    width: 100px;
-                    height: 100px;
-            }
-        
-            .carousel-text {
-                margin-top: 20px;
-                text-align: center;
-                width: 60%;
-            }
-            }
-}
-    }}
+// festival //
 
+.festival_content, .festival_identity {
+    text-align: center;
+    margin-top: 100px;
+
+    & h2 {
+        font-size: x-large;
+        font-weight: bold;
+    }
+    & h3 {
+        font-size: x-large;
+        font-weight: bold;
+    }
+    
+    .card__content_image, .card__content_identity-logo {
+        width: 50%;
+        margin: auto;
+        & img {
+            margin: 40px 0 20px 0;
+            border-radius: 50px;
+        }
+    }
+    .text {
+        margin: auto;
+        width: 40%;
+    }
+}
+
+// Actualitées //
+
+.card__content_actualities-content {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    .card__content_actualities-text {
+        text-align: center;
+        padding: 20px;
+        .card__content_Actualities-title{
+            margin-bottom: 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card__content_actualities-content {
+        display: flex;
+        flex-direction: column;
+        .card__content_actualities-image {
+            text-align: center;
+        }
+    }
+}
+
+// Programmation //
 
