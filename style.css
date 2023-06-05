@@ -341,5 +341,26 @@ footer nav ul.menu.active {
     font-size: medium;
   }
 }
+iframe {
+  margin: auto;
+  width: 80%;
+  height: 300px;
+}
+
+.info_contain {
+  text-align: center;
+}
+.info_contain p {
+  padding: 80px;
+}
+.info_contain h3 {
+  font-size: large;
+  font-weight: bold;
+  margin: 50px 0 10px 0;
+}
+.info_contain .info_accessibility {
+  margin-top: 30px;
+  padding: 80px;
+}
 
 /*# sourceMappingURL=style.css.map */
