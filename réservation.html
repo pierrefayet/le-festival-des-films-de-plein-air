@@ -46,18 +46,28 @@
         <h1>Réservation</h1>
     </div>
     <section class="reservation-section">
-        <h2>Sélectionnez votre film</h2>
-        <div class="film-card">
-          <img src="path/to/film1.jpg" alt="Film 1">
-          <h3>Film 1</h3>
-          <button class="reserve-button">Réserver</button>
-        </div>
-        <div class="film-card">
-          <img src="path/to/film2.jpg" alt="Film 2">
-          <h3>Film 2</h3>
-          <button class="reserve-button">Réserver</button>
-        </div>
-      </section>
+      <h2>Réservez votre place</h2>
+      <div class="film-card">
+        <form action="reservation.php" method="POST">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+          <button type="submit">Réserver</button>
+        </form>
+      </div>
+      <div class="film-select">
+        <label for="film-select">Choisissez un film :</label>
+        <select id="film-select">
+          <option value="The boy">The boy 00/aout </option>
+          <option value="Powerpuff">Film 2</option>
+          <option value="Essence">Film 3</option>
+          <option value="We count">Film 4</option>
+          <option value="Dragon master">Film 5</option>
+          <option value="Lovin' the rain">Film 6</option>
+        </select>
+        <label for="">Nombre de place</label>
+        <input type="number" name="placeNumber" value="1">
+      </div>
+    </section>
   </main>
   <footer>
     <img src="./asset/logo.png " alt="logo">
