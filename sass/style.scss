@@ -1,7 +1,7 @@
 @import "libs/reset.scss";
 
 body {
-    background-color: #e5ecff;
+    background-color: whitesmoke;
 }
 
 li {
@@ -339,8 +339,18 @@ footer {
         font-size: 18px;
         font-weight: bold;
         padding-top: 20px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
+    .button-reservation {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 200px;
+        padding: 15px 50px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        }
 }
 
 @media screen and (min-width: 600px) {
@@ -370,5 +380,111 @@ iframe {
     .info_accessibility{
         margin-top: 30px;
         padding: 80px;
+    }
+}
+
+// Contact //
+
+.contact_banner {
+    text-align: center;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    }
+
+    .contact_form {
+        form {
+            background-image: url(../asset/fond.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 700px;
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #6c757d;
+            }
+
+            textarea {
+            resize: none;
+            height: 150px;
+            }
+
+            button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 80px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+        }
+}
+
+iframe {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+// Film //
+
+
+.film-details {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    .film-details-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .film-details-poster {
+        img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        }
+    }
+
+    .film-details-info {
+        h3 {
+        margin: 50px 0 30px 0;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        }
+        .synopsis {
+            width: 50%;
+            margin: auto;
+        }
+        .trailer {
+            width: 60%;
+            margin: auto;
+        }
+        .button-reservation {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 200px;
+        padding: 15px 50px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        }
     }
 }
