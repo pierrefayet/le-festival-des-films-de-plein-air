@@ -44,7 +44,9 @@ td, th {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
 }
 
 li {
@@ -53,20 +55,21 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 .logo {
-  border-radius: 20px;
+  height: 300px;
 }
 
 header .header_content {
   display: flex;
   justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   align-items: center;
-}
-header .header_content .logo {
-  width: 300px;
+  background: linear-gradient(to top, #e5ecff, #9ebcff);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  height: 300px;
 }
 header .header_content ul {
   display: flex;
@@ -75,20 +78,23 @@ header .header_content ul {
   gap: 2%;
 }
 header .header_content ul a {
-  padding: 30px;
+  padding: 10px;
   font-size: 18px;
+  color: #631f9b;
 }
 
 main span {
   padding-left: 1%;
-  font-size: small;
   display: block;
-  background: #e8e8e8;
   padding: 6px;
-  border-bottom: 1px solid #c5c0c0;
+  color: #3a0d58;
+}
+main span .ariadne thread {
+  font-size: small;
 }
 main a {
-  font-size: larger;
+  color: #e0c8f0;
+  font-family: "Open Sans", sans-serif;
 }
 main h1 {
   font-size: 60px;
@@ -156,30 +162,6 @@ main .content_right div {
   width: 60%;
 }
 
-footer {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 400px;
-}
-footer .footer_contact ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-footer nav ul a {
-  padding: 5px;
-}
-footer form {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-footer .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (max-width: 900px) {
   .carousel {
     display: flex;
@@ -207,32 +189,51 @@ footer .form-group {
   }
 }
 footer {
-  margin-top: 50px;
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 400px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 50px;
+  font-weight: bold;
+  height: 300px;
+  background: linear-gradient(to bottom, #e5ecff, #9ebcff);
+  box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.2), 0px -4px 5px 0px rgba(0, 0, 0, 0.14), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
 }
-footer .footer_contact ul {
+
+.logo_footer {
+  height: 300px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 20px;
+  padding-bottom: 60px;
+}
+
+.footer_contact ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-footer nav .toggle-button {
+
+nav .toggle-button {
   display: inline-block;
   cursor: pointer;
+  background-color: #40ff50;
 }
-footer nav .toggle-button span {
+nav .toggle-button span {
   display: block;
   width: 25px;
   height: 3px;
   margin-bottom: 5px;
   background-color: #000;
 }
-footer nav ul.menu {
+nav ul.menu {
   display: none;
 }
-footer nav ul.menu.active {
+nav ul.menu.active {
   display: block;
 }
 
@@ -253,7 +254,6 @@ footer nav ul.menu.active {
   margin: auto;
 }
 .festival_content .card__content_image img, .festival_content .card__content_identity-logo img, .festival_identity .card__content_image img, .festival_identity .card__content_identity-logo img {
-  margin: 40px 0 20px 0;
   border-radius: 50px;
 }
 .festival_content .text, .festival_identity .text {
@@ -314,9 +314,6 @@ footer nav ul.menu.active {
   background-color: #f1f1f1;
   padding: 20px;
 }
-.Programmation_portfolio-card:hover {
-  transform: scale(1.1);
-}
 .Programmation_portfolio-card > div {
   flex-grow: 1;
 }
@@ -326,7 +323,6 @@ footer nav ul.menu.active {
   object-fit: contain;
   object-position: center center;
   margin-bottom: 10px;
-  transition: width 0.3s;
 }
 .Programmation_portfolio-card h3 {
   font-size: 18px;
@@ -335,14 +331,24 @@ footer nav ul.menu.active {
   margin-bottom: 20px;
 }
 .Programmation_portfolio-card .button-reservation {
-  display: flex;
+  display: inline-block;
   justify-content: center;
-  margin: auto;
   width: 200px;
-  padding: 15px 50px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #40ff50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+.Programmation_portfolio-card .button-reservation:hover {
+  background-color: #0dff21;
+  transform: scale(1.05);
 }
 
 iframe {
@@ -442,8 +448,8 @@ iframe {
 }
 .reservation-section .film-card form button[type=submit] {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
   border: none;
   border-radius: 5px;
 }
@@ -503,8 +509,8 @@ iframe {
   margin: auto;
   width: 200px;
   padding: 15px 50px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
   border-radius: 5px;
 }
 
