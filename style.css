@@ -58,7 +58,7 @@ a {
 }
 
 .logo {
-  height: 300px;
+  height: 250px;
 }
 
 header .header_content {
@@ -69,31 +69,28 @@ header .header_content {
   align-items: center;
   background: linear-gradient(to top, #e5ecff, #9ebcff);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-  height: 300px;
+  height: 250px;
 }
 header .header_content ul {
   display: flex;
   font-size: large;
-  margin-top: 50px;
-  gap: 2%;
+  padding: 0 0 0 0;
 }
 header .header_content ul a {
   padding: 10px;
   font-size: 18px;
-  color: #631f9b;
 }
 
 main span {
   padding-left: 1%;
   display: block;
   padding: 6px;
-  color: #3a0d58;
+  color: black;
 }
-main span .ariadne thread {
-  font-size: small;
+main span a {
+  font-size: 10px;
 }
 main a {
-  color: #e0c8f0;
   font-family: "Open Sans", sans-serif;
 }
 main h1 {
@@ -120,6 +117,7 @@ main .accueil_top-content_left div {
 }
 main .content_mid {
   width: 40%;
+  line-height: 25px;
 }
 main .content_mid img {
   border-radius: 10px;
@@ -158,8 +156,8 @@ main .content_right div {
 }
 .carousel .carousel-text {
   margin-top: 20px;
-  text-align: center;
-  width: 60%;
+  width: 40%;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 900px) {
@@ -196,13 +194,13 @@ footer {
   font-family: "Open Sans", sans-serif;
   margin-top: 50px;
   font-weight: bold;
-  height: 300px;
+  height: 250px;
   background: linear-gradient(to bottom, #e5ecff, #9ebcff);
   box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.2), 0px -4px 5px 0px rgba(0, 0, 0, 0.14), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .logo_footer {
-  height: 300px;
+  height: 250px;
 }
 
 form {
@@ -216,25 +214,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-nav .toggle-button {
-  display: inline-block;
-  cursor: pointer;
-  background-color: #40ff50;
-}
-nav .toggle-button span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin-bottom: 5px;
-  background-color: #000;
-}
-nav ul.menu {
-  display: none;
-}
-nav ul.menu.active {
-  display: block;
 }
 
 .festival_content, .festival_identity {
@@ -351,6 +330,20 @@ nav ul.menu.active {
   transform: scale(1.05);
 }
 
+@media screen and (min-width: 600px) {
+  nav .toggle-button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #40ff50;
+  }
+  nav .toggle-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #000;
+  }
+}
 iframe {
   margin: auto;
   width: 80%;
@@ -378,20 +371,19 @@ iframe {
   width: 100%;
 }
 .contact_banner img {
-  width: 100%;
-  height: 300px;
+  width: 80%;
+  height: 200px;
   object-fit: cover;
+  margin-top: 50px;
 }
 
 .contact_form form {
-  background-image: url(../asset/fond.jpg);
-  background-size: cover;
-  background-position: center;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 700px;
+  width: 80%;
+  margin: auto;
 }
 .contact_form form input,
 .contact_form form textarea {
@@ -406,8 +398,9 @@ iframe {
   height: 150px;
 }
 .contact_form form button[type=submit] {
-  background-color: #007bff;
-  color: white;
+  background-color: #40ff50;
+  color: black;
+  font-weight: bold;
   padding: 20px 80px;
   border: none;
   border-radius: 5px;
@@ -449,7 +442,7 @@ iframe {
 .reservation-section .film-card form button[type=submit] {
   padding: 10px 20px;
   background-color: var(--accent-color);
-  color: var(--primary-background-color);
+  color: #40ff50;
   border: none;
   border-radius: 5px;
 }
