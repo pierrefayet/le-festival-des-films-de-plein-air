@@ -7,6 +7,7 @@ body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: $font-stack-body;
+    color: #060f4c;
 }
 
 li {
@@ -14,10 +15,11 @@ li {
 }
 a {
     text-decoration: none;
+    color: #060f4c;
 }
 
 .logo {
-    height: 250px;
+    height: 100px;
 }
 
 header {
@@ -27,6 +29,7 @@ header {
         font-family: $font-stack-header;
         font-weight: bold;
         align-items: center;
+        margin-right:  60;
         background: linear-gradient(to top, #e5ecff, #9ebcff);
         box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 
                     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 
@@ -41,6 +44,9 @@ header {
                 padding: 10px;
                 font-size: 18px;
             }
+        }
+        nav {
+            margin-right:  60px;
         }
     }
 }
@@ -109,16 +115,11 @@ main {
     }
 }
 
-.carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-
     .content-carousel {
         display: flex;
         justify-content: center;
         width: 100%;
+        margin-top: 30px;
 
         .slclasse {
             opacity: 0.5;
@@ -136,42 +137,13 @@ main {
     }
 
     .carousel-text {
-        margin-top: 20px;
         width: 40%;
+        margin: auto;
         line-height: 25px;
+        margin-top: 30px;
     }
-}
 
-@media screen and (max-width: 900px) {
-    .carousel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
 
-        .content-carousel {
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-
-            .slclasse {
-                opacity: 0.5;
-                transition: opacity 0.5s ease;
-
-                img {
-                    width: 200px;
-                    height: 200px;
-                }
-            }
-
-            .carousel-text {
-                margin-top: 20px;
-                text-align: center;
-                width: 60%;
-            }
-        }
-    }
-}
 
 footer {
         padding: 20px;
@@ -186,21 +158,38 @@ footer {
         box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.2), 
                 0px -4px 5px 0px rgba(0, 0, 0, 0.14), 
                 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
-    }
+    
     .logo_footer {
         height: 250px;
     }
-    form {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 20px;
-        padding-bottom: 60px;
+    .footer_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        .newsletter {
+            display: flex;
+            flex-direction: row;
+            padding-right: 30px;
+            & form {
+                display: flex;
+                flex-direction: column;
+                height: 20px;
+                padding-bottom: 60px;
+                p {
+                    margin: auto;
+                    margin-top: 10px;
+                }
+            }
+        }
     }
     .footer_contact ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
 }
+
 
 
 
@@ -249,26 +238,19 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .card__content_actualities-content {
-        display: flex;
-        flex-direction: column;
-        .card__content_actualities-image {
-            text-align: center;
-        }
-    }
-}
 
 // Programmation //
 
 .Programmation_content-text {
     margin: auto;
-    text-align: center;
     width: 50%;
+    line-height: 25px;
+    margin-top: 60px;
     .Programmation_content-text-title {
         font-size: 25px;
         font-weight: bold;
         margin-bottom: 30px;
+        text-align: center;
     }
 }
 
@@ -288,6 +270,7 @@ footer {
     text-align: center;
     background-color: #f1f1f1;
     padding: 20px;
+    border-radius: 20px;
     
 
     > div {
@@ -300,8 +283,6 @@ footer {
         object-fit: contain;
         object-position: center center;
         margin-bottom: 10px;
-        
-        
     }
 
     h3 {
@@ -333,23 +314,6 @@ footer {
     }
 }
 
-@media screen and (min-width: 600px) {
-    
-    nav {
-        .toggle-button {
-        display: inline-block;
-            cursor: pointer;
-            background-color: $button-color;
-            span {
-                display: block;
-                width: 25px;
-                height: 3px;
-                margin-bottom: 5px;
-                background-color: #000;
-            }
-        }
-    }
-}
 // Info //
 
 iframe {
@@ -482,15 +446,6 @@ iframe {
         padding: 5px;
         }
     }
-    }
-
-@media screen and (max-width: 600px) {
-    .reservation-section {
-        .film-card {
-        width: 100%;
-        margin: 10px 0;
-        }
-    }
 }
 
 // Film //
@@ -545,3 +500,145 @@ iframe {
         }
     }
 }
+
+// Responsive //
+
+@media screen and (max-width: 1000px) {
+    
+    .menu li{
+        display: none;
+        
+    }
+    nav {
+        .toggle-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            background-color: rgb(255, 251, 251);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2%;
+        
+            span {
+                margin: auto;
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 3px 0;
+                background-color: #201f1f;
+            }
+        }
+    }
+        .content-carousel {
+            display: grid;
+            grid-template-columns: repeat(2, 0.3fr);
+            width: 100%;
+
+            .slclasse {
+                opacity: 0.5;
+                transition: opacity 0.5s ease;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .carousel-text {
+                margin-top: 20px;
+                text-align: center;
+                width: 60%;
+            }
+        }
+    
+    .card__content_actualities-content {
+        display: flex;
+        flex-direction: column;
+        .card__content_actualities-image {
+            text-align: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    header .header_content nav {
+        margin-right: 10px;
+    }
+    main {
+        h1 {
+        font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .Programmation_content-text {
+            font-size: 15px;
+        }
+    }
+    .reservation-section {
+        .film-card {
+        width: 100%;
+        margin: 10px 0;
+        }
+    }
+    .content-carousel {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Programmation_portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        .footer_contact {
+            font-size: 10px;
+        }
+        label {
+            font-size: 10px;margin-bottom: 5px;
+            text-align: center;
+        }
+        .logo {
+            height: 100px;
+        }
+        button {
+            font-size: 10px;
+        }
+        .footer_content {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 15px;
+            margin-right: 10px;
+        }
+    }
+    .toggle-button {
+        width: 40px;
+        height: 40px;
+        span {
+            width: 15px;
+            height: 3px;
+        }
+    }
+    .content_right, .accueil_top-content_left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px)  {
+    .toggle-button {
+        width: 20px;
+        height: 20px;
+        span {
+            width: 10px;
+            height: 3px;
+        }
+    }
+}
+

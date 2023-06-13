@@ -47,6 +47,7 @@ body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  color: #060f4c;
 }
 
 li {
@@ -55,10 +56,11 @@ li {
 
 a {
   text-decoration: none;
+  color: #060f4c;
 }
 
 .logo {
-  height: 250px;
+  height: 100px;
 }
 
 header .header_content {
@@ -67,6 +69,7 @@ header .header_content {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   align-items: center;
+  margin-right: 60;
   background: linear-gradient(to top, #e5ecff, #9ebcff);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   height: 250px;
@@ -79,6 +82,9 @@ header .header_content ul {
 header .header_content ul a {
   padding: 10px;
   font-size: 18px;
+}
+header .header_content nav {
+  margin-right: 60px;
 }
 
 main span {
@@ -132,60 +138,31 @@ main .content_right div {
   padding: 10px;
 }
 
-.carousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-}
-.carousel .content-carousel {
+.content-carousel {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 30px;
 }
-.carousel .content-carousel .slclasse {
+.content-carousel .slclasse {
   opacity: 0.5;
   transition: opacity 0.5s ease;
 }
-.carousel .content-carousel .slclasse img {
+.content-carousel .slclasse img {
   width: 200px;
   height: 200px;
 }
-.carousel .content-carousel .slclasse:nth-child(3) {
+.content-carousel .slclasse:nth-child(3) {
   opacity: 1;
 }
-.carousel .carousel-text {
-  margin-top: 20px;
+
+.carousel-text {
   width: 40%;
+  margin: auto;
   line-height: 25px;
+  margin-top: 30px;
 }
 
-@media screen and (max-width: 900px) {
-  .carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-  }
-  .carousel .content-carousel {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-  .carousel .content-carousel .slclasse {
-    opacity: 0.5;
-    transition: opacity 0.5s ease;
-  }
-  .carousel .content-carousel .slclasse img {
-    width: 200px;
-    height: 200px;
-  }
-  .carousel .content-carousel .carousel-text {
-    margin-top: 20px;
-    text-align: center;
-    width: 60%;
-  }
-}
 footer {
   padding: 20px;
   display: flex;
@@ -198,19 +175,31 @@ footer {
   background: linear-gradient(to bottom, #e5ecff, #9ebcff);
   box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.2), 0px -4px 5px 0px rgba(0, 0, 0, 0.14), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
 }
-
-.logo_footer {
+footer .logo_footer {
   height: 250px;
 }
-
-form {
-  display: grid;
-  grid-template-columns: 1fr;
+footer .footer_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+footer .footer_content .newsletter {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
+}
+footer .footer_content .newsletter form {
+  display: flex;
+  flex-direction: column;
   height: 20px;
   padding-bottom: 60px;
 }
-
-.footer_contact ul {
+footer .footer_content .newsletter form p {
+  margin: auto;
+  margin-top: 10px;
+}
+footer .footer_contact ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -256,24 +245,17 @@ form {
   font-weight: bold;
 }
 
-@media screen and (max-width: 900px) {
-  .card__content_actualities-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .card__content_actualities-content .card__content_actualities-image {
-    text-align: center;
-  }
-}
 .Programmation_content-text {
   margin: auto;
-  text-align: center;
   width: 50%;
+  line-height: 25px;
+  margin-top: 60px;
 }
 .Programmation_content-text .Programmation_content-text-title {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .Programmation_portfolio {
@@ -292,6 +274,7 @@ form {
   text-align: center;
   background-color: #f1f1f1;
   padding: 20px;
+  border-radius: 20px;
 }
 .Programmation_portfolio-card > div {
   flex-grow: 1;
@@ -330,20 +313,6 @@ form {
   transform: scale(1.05);
 }
 
-@media screen and (min-width: 600px) {
-  nav .toggle-button {
-    display: inline-block;
-    cursor: pointer;
-    background-color: #40ff50;
-  }
-  nav .toggle-button span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin-bottom: 5px;
-    background-color: #000;
-  }
-}
 iframe {
   margin: auto;
   width: 80%;
@@ -458,12 +427,6 @@ iframe {
   padding: 5px;
 }
 
-@media screen and (max-width: 600px) {
-  .reservation-section .film-card {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
 .film-details {
   padding: 20px;
   background-color: #fff;
@@ -505,6 +468,128 @@ iframe {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
   border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu li {
+    display: none;
+  }
+  nav .toggle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: rgb(255, 251, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+  }
+  nav .toggle-button span {
+    margin: auto;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #201f1f;
+  }
+  .content-carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    width: 100%;
+  }
+  .content-carousel .slclasse {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+  }
+  .content-carousel .slclasse img {
+    width: 200px;
+    height: 200px;
+  }
+  .content-carousel .carousel-text {
+    margin-top: 20px;
+    text-align: center;
+    width: 60%;
+  }
+  .card__content_actualities-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .card__content_actualities-content .card__content_actualities-image {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  header .header_content nav {
+    margin-right: 10px;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+  main .Programmation_content-text {
+    font-size: 15px;
+  }
+  .reservation-section .film-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .content-carousel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Programmation_portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_contact {
+    font-size: 10px;
+  }
+  footer label {
+    font-size: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  footer .logo {
+    height: 100px;
+  }
+  footer button {
+    font-size: 10px;
+  }
+  footer .footer_content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10px;
+  }
+  .toggle-button {
+    width: 40px;
+    height: 40px;
+  }
+  .toggle-button span {
+    width: 15px;
+    height: 3px;
+  }
+  .content_right, .accueil_top-content_left {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .toggle-button {
+    width: 20px;
+    height: 20px;
+  }
+  .toggle-button span {
+    width: 10px;
+    height: 3px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
