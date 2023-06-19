@@ -500,6 +500,7 @@ iframe {
   border: #40ff50 2px solid;
   border-radius: 5px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .reservation-section .film-card form label {
   height: 25px;
@@ -509,7 +510,6 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
 }
 .reservation-section .film-select label {
   display: block;
@@ -648,15 +648,19 @@ iframe {
     font-size: 15px;
   }
   .reservation-section .film-card {
+    display: flex;
+    flex-direction: column-reverse;
     width: 65%;
     margin: 10px 0;
   }
   .reservation-section .film-select {
-    width: 65%;
     display: block;
   }
   .reservation-section .film-select input {
     width: 100%;
+  }
+  .reservation-section label {
+    font-size: 15px;
   }
   .content-carousel {
     display: flex;
@@ -730,6 +734,9 @@ iframe {
   .newsletter footer .footer_content .newsletter form p {
     margin: auto;
     width: 80%;
+  }
+  .reservation-section label {
+    font-size: 10px;
   }
 }
 

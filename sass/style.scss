@@ -516,6 +516,7 @@ iframe {
                 border: $button-color 2px solid ; 
                 border-radius: 5px;
                 font-weight: bold;
+                margin-bottom: 20px;
             }
 
             label {
@@ -526,11 +527,9 @@ iframe {
     }
 
     .film-select {
-
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;
         
         label {
         display: block;
@@ -697,16 +696,21 @@ iframe {
         }
     }
     .reservation-section {
+        
         .film-card {
+            display: flex;
+        flex-direction: column-reverse;
         width: 65%;
         margin: 10px 0;
         }
         .film-select {
-            width: 65%;
             display: block;
             & input {
                 width: 100%;
             }
+        }
+        label {
+            font-size: 15px;
         }
     }
     .content-carousel {
@@ -787,6 +791,10 @@ iframe {
             margin: auto;
             width: 80%;
         }
-    }    
+    }
+    
+    .reservation-section label {
+        font-size: 10px;
+    }
 }
 
