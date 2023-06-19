@@ -476,6 +476,7 @@ iframe {
 
 .reservation-section {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     border: #d8dcdf 2px solid;
