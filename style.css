@@ -65,6 +65,10 @@ a {
 
 h1, h2, h3 {
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
 }
 
 p {
@@ -409,16 +413,55 @@ iframe {
   margin: auto;
 }
 .info_contain h3 {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 28px;
   font-weight: bold;
-  margin: 50px 0 10px 0;
+}
+.info_contain .info_location {
+  margin-top: 30px;
+}
+.info_contain .info_location .info_location-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_contain .info_location .info_location-title i {
+  font-size: 30px;
 }
 .info_contain .info_accessibility {
   margin-top: 30px;
 }
-.info_contain .info_parking p {
+.info_contain .info_accessibility .info_accessibility-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_contain .info_accessibility .info_accessibility-title i {
+  font-size: 30px;
+}
+.info_contain .info_parking {
   margin-top: 30px;
+}
+.info_contain .info_parking .info_parking-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_contain .info_parking .info_parking-title i {
+  font-size: 30px;
+}
+.info_contain .info_shuttle {
+  margin-top: 30px;
+}
+.info_contain .info_shuttle .info_shuttle-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_contain .info_shuttle .info_shuttle-title i {
+  font-size: 30px;
 }
 
 .contact_banner {
@@ -639,6 +682,9 @@ iframe {
   }
 }
 @media screen and (max-width: 1000px) {
+  .info_contain .info_shuttle .info_shuttle-title i {
+    font-size: 20 px;
+  }
   .identity h1 {
     font-size: 10px;
   }
