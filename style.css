@@ -347,6 +347,10 @@ footer .footer_contact ul {
 }
 
 .Programmation_portfolio-card {
+  margin-bottom: 20px;
+}
+
+.card-day {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,23 +359,22 @@ footer .footer_contact ul {
   padding: 20px;
   border-radius: 20px;
 }
-.Programmation_portfolio-card > div {
+.card-day > div {
   flex-grow: 1;
 }
-.Programmation_portfolio-card img {
-  width: 90%;
+.card-day img {
   height: 100%;
   object-fit: contain;
   object-position: center center;
   margin-bottom: 10px;
 }
-.Programmation_portfolio-card h3 {
+.card-day h3 {
   font-size: 18px;
   font-weight: bold;
   padding-top: 20px;
   margin-bottom: 20px;
 }
-.Programmation_portfolio-card .button-reservation {
+.card-day .button-reservation {
   display: inline-block;
   justify-content: center;
   width: 200px;
@@ -387,7 +390,7 @@ footer .footer_contact ul {
   transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
-.Programmation_portfolio-card .button-reservation:hover {
+.card-day .button-reservation:hover {
   background-color: #00d912;
   transform: scale(1.05);
 }
@@ -682,6 +685,11 @@ iframe {
   }
 }
 @media screen and (max-width: 1000px) {
+  .Programmation_portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
   .info_contain .info_shuttle .info_shuttle-title i {
     font-size: 20 px;
   }
